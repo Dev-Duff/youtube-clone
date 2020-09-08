@@ -1,8 +1,6 @@
 <img alt="gif" src="githubAssets/webImg.png"/>
 <img alt="gif" src="githubAssets/mobileGif.gif" width="250" height="528"/>
 
-[![AUTHOR]vitorrrocha](https://github.com/vitorrrocha)
-
 # Youtube-clone
 A clone of the Youtube interface developed in react. 💻 
 
