@@ -11,7 +11,7 @@ A clone of the Youtube interface developed in react. 💻
 **Cloning repository and running**
 
 ```bash
-$ git clone https://github.com/Vitorrrocha/youtube-clone && cd youtube-clon
+$ git clone https://github.com/Vitorrrocha/youtube-clone && cd youtube-clone
 ```
 
 **Installing dependencies**
