@@ -4,6 +4,8 @@
 # Youtube-clone
 A clone of the Youtube interface developed in react. 💻 
 
+#NOT FINISHED
+
 ### Available Scripts 💻
 
 **Cloning repository and running**
