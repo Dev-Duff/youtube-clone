@@ -1,7 +1,7 @@
 <img alt="gif" src="githubAssets/webImg.png"/>
 <img alt="gif" src="githubAssets/mobileGif.gif" width="250" height="528"/>
 
-[![AUTHOR](https://img.shields.io/github/vitorrrocha)](https://github.com/vitorrrocha)
+[![AUTHOR]vitorrrocha](https://github.com/vitorrrocha)
 
 # Youtube-clone
 A clone of the Youtube interface developed in react. 💻 
