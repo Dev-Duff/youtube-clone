@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 
 import TopBar from '../../components/TopBar';
+import Drawer from '../../components/Drawer';
 
 const useStyles = makeStyles({
     root: {
@@ -15,6 +16,7 @@ function Home() {
     return(
         <div className={classes.root}>
             <TopBar />
+            <Drawer />
         </div>
     )
 }
