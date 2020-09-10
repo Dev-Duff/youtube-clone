@@ -17,6 +17,7 @@ function Home() {
         <div className={classes.root}>
             <TopBar />
             <Drawer />
+            
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, AppBar, Toolbar, IconButton, Button } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu'
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import AccountCircle from '@material-ui/icons/AccountCircle';
 import VideoCall from '@material-ui/icons/VideoCall';
 import Apps from '@material-ui/icons/Apps';
 import MoreVert from '@material-ui/icons/MoreVert';
@@ -9,7 +9,7 @@ import MoreVert from '@material-ui/icons/MoreVert';
 const useStyles = makeStyles({
     appBar: {
       position: 'fixed',
-      backgroundColor: 'inherit',
+      backgroundColor: 'white',
       color: 'inherit',
       boxShadow: 'none',
       font: '14px Roboto, Arial, sans-serif '
@@ -18,21 +18,21 @@ const useStyles = makeStyles({
         flexGrow: 1
     },
     menuButton: {
-        paddingRight: '18px',
-        paddingLeft: '14px'
+        paddingRight: 18,
+        paddingLeft: 14
     },
     button: {
-        height: '40px',
-        fontWeight: '600',
+        height: 40,
+        fontWeight: 600,
         borderRadius: 'inherit',
         lineHeight: 'initial'
     },
     icons: {
-        paddingRight: '18px',
+        paddingRight: 18,
         color: '#606060'
     },
     logo :{
-        height: '30px'
+        height: 30
     },
   });
 
@@ -56,8 +56,7 @@ function TopBar() {
                 <IconButton className={classes.icons} >
                     <MoreVert />
                 </IconButton>
-                <Button startIcon={<AccountCircleIcon />} variant='outlined' color='secondary' className={classes.button}>
-                    
+                <Button startIcon={<AccountCircle />} variant='outlined' color='secondary' className={classes.button}>
                     SIGN IN
                 </Button>
             </Toolbar>
