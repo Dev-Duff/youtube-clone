@@ -6,6 +6,13 @@ A clone of the Youtube interface developed in react. 💻
 
 # NOT FINISHED
 
+## :rocket: Technologies
+
+This project was developed with the following technologies:
+
+- [React JS](https://reactjs.org/)
+- [Material UI](https://material-ui.com/)
+
 ### Available Scripts 💻
 
 **Cloning repository and running**
