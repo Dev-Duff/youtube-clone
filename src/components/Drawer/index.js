@@ -43,7 +43,6 @@ const useStyles = makeStyles({
         zIndex: '9999',
         width: drawerWidth,
         flexShrink: 0,
-        position: 'fixed',
 
       },
       drawerPaper: {
