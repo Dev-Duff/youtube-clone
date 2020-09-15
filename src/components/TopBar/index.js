@@ -6,6 +6,8 @@ import VideoCall from '@material-ui/icons/VideoCall';
 import Apps from '@material-ui/icons/Apps';
 import MoreVert from '@material-ui/icons/MoreVert';
 
+import { useTheme } from '@material-ui/core/styles';
+
 const useStyles = makeStyles({
     appBar: {
       position: 'fixed',
@@ -21,11 +23,13 @@ const useStyles = makeStyles({
         paddingRight: 18,
         paddingLeft: 14
     },
-    button: {
+      button: {
         height: 40,
         fontWeight: 600,
         borderRadius: 'inherit',
-        lineHeight: 'initial'
+        lineHeight: 'initial',
+        color: '#065FD4',
+        borderColor: '#065FD4'
     },
     icons: {
         paddingRight: 18,
@@ -37,10 +41,16 @@ const useStyles = makeStyles({
   });
 
 function TopBar() {
+    const theme = useTheme();
+
     const classes = useStyles();
 
     return(
-        <AppBar position="static" className={classes.appBar}>
+        <AppBar 
+            position="static" 
+            className={classes.appBar} 
+            style={{ backgroundColor: theme.palette.background.drawer, color: theme.palette.background.text}}
+            >
             <Toolbar>
                 <IconButton edge="start" className={classes.menuButton} aria-label="menu">
                     <MenuIcon />
