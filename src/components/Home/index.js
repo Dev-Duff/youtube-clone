@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   });
 
 function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const theme = createMuiTheme({
     spacing: 4,
@@ -26,13 +26,16 @@ function Home() {
         dark: darkMode ? '#181818' : '#f4f6f8',
         drawer: darkMode ? '#232323' : '#FFFFFF',
         text: darkMode ? '#FFF' : '#232323',
+        logo: darkMode ? '/images/branco.png' : '/images/preto.png',
       },
     },
   });
     
-    const classes = useStyles();
-
-    return(
+  const classes = useStyles();
+  
+  const htmlBg = document.querySelector('html').style.background = theme.palette.background.dark //change all the html bgColor
+    
+  return(
         <ThemeProvider theme={theme} style={{height: '100%'}} setDarkMode={setDarkMode}>
           <div className={classes.root} >
             <TopBar />

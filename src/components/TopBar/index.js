@@ -36,7 +36,8 @@ const useStyles = makeStyles({
         color: '#606060'
     },
     logo :{
-        height: 30
+        height: 30,
+        cursor: 'pointer'
     },
   });
 
@@ -55,15 +56,15 @@ function TopBar() {
                 <IconButton edge="start" className={classes.menuButton} aria-label="menu">
                     <MenuIcon />
                 </IconButton>
-                <img alt='logo' src='/images/preto.png' className={classes.logo} />
+                <img alt='logo' src={theme.palette.background.logo} className={classes.logo}/>
                 <div className={classes.grow}/>
-                <IconButton className={classes.icons} >
+                <IconButton className={classes.icons} style={{color: theme.palette.background.text}}>
                     <VideoCall />
                 </IconButton>
-                <IconButton className={classes.icons} >
+                <IconButton className={classes.icons} style={{color: theme.palette.background.text}}>
                     <Apps />
                 </IconButton>
-                <IconButton className={classes.icons} >
+                <IconButton className={classes.icons} style={{color: theme.palette.background.text}}>
                     <MoreVert />
                 </IconButton>
                 <Button startIcon={<AccountCircle />} variant='outlined' color='secondary' className={classes.button}>

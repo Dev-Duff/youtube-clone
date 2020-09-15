@@ -94,8 +94,9 @@ const videos = [
 const useStyles = makeStyles({
     videoListContainer: {
         padding: '1.4rem',
+        width: '100%',
         height: '100%',
-        // padding: '8 0 0 2rem'
+        cursor: 'pointer'
     },
     text: {
         fontWeight: '600',
@@ -118,7 +119,7 @@ function VideoList() {
     const theme = useTheme();
 
     const classes = useStyles();
-
+    
     return(
         <div style={{ backgroundColor: theme.palette.background.dark}} className={classes.videoListContainer} p={8}>
             <Toolbar />
