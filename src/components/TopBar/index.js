@@ -58,13 +58,13 @@ function TopBar() {
                 </IconButton>
                 <img alt='logo' src={theme.palette.background.logo} className={classes.logo}/>
                 <div className={classes.grow}/>
-                <IconButton className={classes.icons} style={{color: theme.palette.background.text}}>
+                <IconButton className={classes.icons} style={{color: theme.palette.background.icons}}>
                     <VideoCall />
                 </IconButton>
-                <IconButton className={classes.icons} style={{color: theme.palette.background.text}}>
+                <IconButton className={classes.icons} style={{color: theme.palette.background.icons}}>
                     <Apps />
                 </IconButton>
-                <IconButton className={classes.icons} style={{color: theme.palette.background.text}}>
+                <IconButton className={classes.icons} style={{color: theme.palette.background.icons}}>
                     <MoreVert />
                 </IconButton>
                 <Button startIcon={<AccountCircle />} variant='outlined' color='secondary' className={classes.button}>
