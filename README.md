@@ -3,7 +3,7 @@
 
 # Youtube-clone
 A clone of the Youtube interface developed in react. 💻 
-(https://vitorrrocha-yotube-clone.netlify.app)
+- [YOUTUBE-CLONE](https://vitorrrocha-yotube-clone.netlify.app)
 
 ## :rocket: Technologies
 
