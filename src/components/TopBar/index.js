@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, AppBar, Toolbar, IconButton, Button } from '@material-ui/core';
+import { makeStyles, AppBar, Toolbar, IconButton, Button, Switch  } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu'
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import VideoCall from '@material-ui/icons/VideoCall';
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
     },
   });
 
-function TopBar() {
+function TopBar({darkMode, setDarkMode}) {
     const theme = useTheme();
 
     const classes = useStyles();
@@ -58,6 +58,12 @@ function TopBar() {
                 </IconButton>
                 <img alt='logo' src={theme.palette.background.logo} className={classes.logo}/>
                 <div className={classes.grow}/>
+                <Switch 
+                    value={'darkMode'} 
+                    onChange={() => setDarkMode(!darkMode)} 
+                    className={classes.icons}
+                    style={{color: 'white'}}
+                />
                 <IconButton className={classes.icons} style={{color: theme.palette.background.icons}}>
                     <VideoCall />
                 </IconButton>

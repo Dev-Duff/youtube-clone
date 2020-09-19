@@ -35,11 +35,11 @@ function Home() {
   const classes = useStyles();
 
   const htmlBg = document.querySelector('html').style.background = theme.palette.background.dark //change all the html bgColor
-    
+  console.log(htmlBg)
   return(
         <ThemeProvider theme={theme} style={{height: '100%'}} setDarkMode={setDarkMode}>
           <div className={classes.root} >
-            <TopBar />
+            <TopBar darkMode={darkMode} setDarkMode={setDarkMode}/>
             <Drawer />
             <VideoList />
           </div>
