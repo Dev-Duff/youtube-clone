@@ -3,14 +3,13 @@
 
 # Youtube-clone
 A clone of the Youtube interface developed in react. 💻 
-
-# NOT FINISHED
+(https://vitorrrocha-yotube-clone.netlify.app)
 
 ## :rocket: Technologies
 
 This project was developed with the following technologies:
 
-- [React JS](https://reactjs.org/)
+- [React JS](https://reactjs.org/)vitorrrocha-yotube-clone.netlify.app
 - [Material UI](https://material-ui.com/)
 
 ### Available Scripts 💻
